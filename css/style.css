@@ -6,7 +6,7 @@
 }
 body{
     background-color: white;
-    background-image:url('sao.png');
+    background-image:url('../imagens/sao.png');
     background-size:cover; 
     overflow: hidden;
 }

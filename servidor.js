@@ -6,23 +6,25 @@ app.engine('html', mustache());
 app.set('view engine', 'html');
 app.set('views', __dirname + '/RPG');
 
-app.get('/index.html', function(req, res) {
+app.get('/', function(req, res) {
     res.sendFile( __dirname + '/html/index.html');
 });
 
-app.get('/jogar.html', function(req, res) {
+app.get('/jogar', function(req, res) {
     res.render( __dirname + '/html/jogar.html');
 });
 
-app.get('/ajuda.html', function(req, res) {
+app.get('/ajuda', function(req, res) {
     res.render( __dirname + '/html/ajuda.html');
 });
 
-app.get('/sobrenovo.html', function(req, res) {
+app.get('/sobrenovo', function(req, res) {
     res.render( __dirname + '/html/sobrenovo.html');
 });
 
 app.use('/css',express.static(__dirname + '/css'));
+
+app.use('/imagens',express.static(__dirname + '/imagens'));
 
 app.use(express.static('imagens'));
 

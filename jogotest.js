@@ -53,16 +53,39 @@ const host = 'localhost';
 const porta = 3000;
 
 var app = express();
-app.engine('html', mustache());
-app.set('view engine', 'html');
-app.set('views', __dirname + 'rpg');
-app.use(session({ secret: 'rpg', resave: false, saveUninitialized: true }));
+
+app.set('views', __dirname + '/RGP');
+app.use(session({ secret: '/RPG', resave: false, saveUninitialized: true }));
 
 console.log(__dirname);
 
 app.use(express.static(__dirname));
+app.engine('html', mustache());
+app.set('view engine', 'html');
+app.set('views', __dirname + '/RPG');
+
+app.get('/', function(req, res) {
+    res.sendFile( __dirname + '/html/index.html');
+});
+
+app.get('/ajuda', function(req, res) {
+    res.render( __dirname + '/html/ajuda.html');
+});
+
+app.get('/sobrenovo', function(req, res) {
+    res.render( __dirname + '/html/sobrenovo.html');
+});
+
+app.use('/css',express.static(__dirname + '/css'));
+
+app.use('/imagens',express.static(__dirname + '/imagens'));
+
+app.use(express.static('imagens'));
+
 
 app.get('/jogar', function(req, res, next) {
+
+
 
 	if (req.session.mapa == null) {
 
@@ -86,7 +109,7 @@ app.get('/jogar', function(req, res, next) {
 
      
     res.write('<html>');
-    res.write(`<link rel="stylesheet" href="/css.css" media="screen" charset="utf-8">`);
+    res.write(`<link rel="stylesheet" href="/css" media="screen" charset="utf-8">`);
     res.write('<body>');
 		res.write('<table>');
 	

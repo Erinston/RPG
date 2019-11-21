@@ -1,25 +1,13 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="shortcut icon" href="sao.png">
 	<meta charset="UTF-8">
-	<title>Nivel 1</title>
+	<title>Jogar</title>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
 		*{
 			margin: 0;
 			padding: 0;
-		}
-		
-		a {
-		    text-decoration: none;
-			color: white;
-			font-size: 50px;
-			font-family: 'Amatic SC', cursive;
-			margin-left: 20px;
-			margin-top: 200px;
 		}
 		body{
 			background-image: url('sao.png');
@@ -28,106 +16,118 @@
 			/*background-attachment: fixed;*/
 			/*cursor:crosshair;*/
 		}
-
-	div{
-	text-align: center;
-	color:white;
-	font-size: 50px;
-	}
-	td{
-		background:white;
-	 	background-image: url('map1.png');
-	 	background-repeat: no-repeat;
-	}	
-	table{
-		border: 5px solid green;
-	 	margin: auto;
-	 	width:500px;
-	 	height:500px;
-		
-	}
-	
+		.titulo{
+			color: white;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		.voltar{
+			text-decoration: none;
+			margin-left: 10px;
+			border: 2px solid black;
+			background-color: black;
+			border-radius: 1px;
+			width: 140px;
+			color: white;
+		}
+		.telaJogo{
+			background: white;
+			color: black;
+			margin: 0 auto;
+			border: 1px solid white;
+			width: 800px;
+			height: 552px;
+		}
+		.img{
+			width: 100%;
+		}
+		.jogador1{
+			/*border: 1px solid black;*/
+			width: 300px;
+			height: 200px;
+			margin-top: -0.4%;
+			/*background-color: red;*/
+		}
+		.jogador2{
+			/*border: 1px solid black;*/
+			width: 300px;
+			height: 200px;
+			margin-left: 62.4%;
+		}
+		.areaJogador{
+			border: 1px solid black;
+			width: 100%;
+			height: 150px;
+			/*background: yellow;*/
+			margin-top: 0px;
+		}
+		.textos{
+			border: 1px solid black;
+			height: 100%;
+			width: 50%;
+		}
+		.botoes{
+			margin-left: 50%;
+			margin-top: -19%;
+			border: 1px solid black;
+			height: 100%;
+			width: 50%;
+		}
+		#bt{
+			color: black;
+			border: 1px solid black;
+			height: 30%;
+			width: 40%;			
+		}
+		.bt1{
+			margin-top: 10px;
+			margin-left: 10px;
+			background: yellow;
+		}
+		.bt2{
+			margin-top: 30px;
+			margin-left: 10px;
+			background: red;
+		}
+		.bt3{
+			margin-top: -125px;
+			margin-left: 200px;
+			background: blue;
+		}
+		.bt4{
+			margin-top: 31.5px;
+			margin-left: 200px;
+		}
 	</style>
- 
 </head>
 <body>
-	<!-- header -->
-
-	<div class="cabecalho">
-    		<h2>ROLE-PLAYING GAME(RPG)</h2>
-    </div>
-    		<a href="/">VOLTAR</a>
-
+	<div class="container">
+		<h1 class="titulo">ROLE-PLAYING GAME(RPG)</h1>
+		<a href="#" class="voltar">Voltar</a>
+		<div class="telaJogo">
+			<div class="jogador2">
+				<img class="img" src="charla.gif" alt="">
+			</div>
+			<div class="jogador1">
+				<img class="img" src="charli.gif" alt="">
+			</div>
+			<div class="areaJogador">
+				<div class="textos">
+					<h3>Ataque neste momento</h3>
+				</div>
+				<div class="botoes">
+					<div class="bt1" id="bt">
+						<button>
+							<a href=""> Bola de Fogo</a>
+						</button>
+					</div>
+					<div class="bt2" id="bt"></div>
+					<div class="bt3" id="bt"></div>
+					<div class="bt4" id="bt"></div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="jogo">
-		
-		<table>
-			<tr>
-			
-			<td>
-				
-			</td>
-			
-			<td>
-				
-			</td>
-			
-			</tr>
-
-			<tr>
-			
-			<td>
-				
-			</td>
-			
-			<td>
-				
-			</td>
-			
-			</tr>
-
-			<tr>
-			
-			<td>
-			
-			</td>
-			
-			<td>
-				
-			</td>
-			
-			</tr>
-
-			<tr>
-			
-			<td>
-				
-			</td>
-			
-			<td>
-				
-			</td>
-			
-			</tr>
-
-			<tr>
-			
-			<td>
-				
-			</td>
-			
-			<td>
-				
-			</td>
-			</tr>
-		</table>
-</div>
-	<div class="niveis"></div>
-
 </body>
 </html>
-
-
-
-
-

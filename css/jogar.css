@@ -2,12 +2,15 @@
 		*{
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
+			font-family:'Amatic SC', cursive;
+
 		}
 		body{
-			background-image: url('/sao.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-			
+			 background: url('../imagens/pokemon.jpg');
+   			 background-repeat: no-repeat;
+    		 background-size: cover; 
+             font-family: 'Amatic SC', cursive;
 
 			/*background-attachment: fixed;*/
 			/*cursor:crosshair;*/
@@ -17,16 +20,9 @@
 			margin: 0 auto;
 			margin-top: 10px;
 			color: white;
+			font-size: 60px;
 		}
-		.voltar{
-			text-decoration: none;
-			margin-left: 10px;
-			border: 2px solid black;
-			background-color: black;
-			border-radius: 1px;
-			width: 140px;
-			color: white;
-		}
+		
 		.telaJogo{
 			margin: 0 auto;
 			border: 1px solid red;
@@ -99,7 +95,7 @@
 			width: 40%;			
 		}
 		.bt1{
-			margin-top: 10px;
+			margin-top: 100px;
 			margin-left: 10px;
 			background: yellow;
 			color: black;
@@ -122,3 +118,18 @@
 			background: black;
 			color: white;
 		}
+		a {
+           
+            color: rgb(45, 46, 46);
+            font-family: 'Amatic SC', cursive; 
+            text-transform: uppercase;
+            font-size: 60px;
+            text-decoration: none;
+            margin-left: 15px;
+            margin-top: -500px;
+            color: white;
+            position: relative;
+            top: -60px;
+            
+        }   
+		 

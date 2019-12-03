@@ -4,10 +4,10 @@ var app = express();
 
 app.engine('html', mustache());
 app.set('view engine', 'html');
-app.set('views', __dirname + '/jogo da velhar1');
+app.set('views', __dirname + '/RPG');
 
 app.get('/', function(req, res) {
-    res.render( __dirname + '/html/PROJ.html');
+    res.sendFile( __dirname + '/html/index.html');
 });
 
 // TABELA PRA DEIXAR O ARRAY COM 0c
@@ -23,14 +23,15 @@ app.get('/jogar', function(req, res) {
         //MOSTRANDO O TITULO E LINKANDO O CSS
         res.write('<meta charset="utf-8">');
         res.write('<title>jogo</title>');
-    res.write('<link rel="stylesheet" type="text/css" href="/css/jogar.css">');       
+    res.write('<link rel="stylesheet" type="text/css" href="../css/jogar.css">');
+
 
      res.write('</head>');
     //COLOCANDO A IMAGEM DE FUNDO
    res.write('<body>');
   //CRIANDO UMA DIV INDENTIFICADOR PRA MOSTRAR A VEZ DE QUEM JOGOU E CHAMANDO A FUNÇÃO VEZDOJOGADOR
     res.write('<h1 class="titulo" > ROLE-PLAYING GAME(RPG)</h1>');
-    res.write('<a href="/" class="voltar">"voltar "</a>');
+    res.write('<a href="/">voltar</a>');
     res.write('<div class="telaJogo">');
             res.write('<div class="jogador2">');
                 res.write('<img class="img" src="charla.gif" >');
@@ -46,10 +47,10 @@ app.get('/jogar', function(req, res) {
          res.write('<div class="textos">');
              res.write('<h3> "Escolha o seu ataque neste monento"</h3>');
              res.write('<div class="botoes">');
-                 res.write('<button class="bt1" id="bt">"olá"</button>');
-                 res.write('<button class="bt2" id="bt">"lá"</button>');
-                 res.write('<button class="bt3" id="bt">"ol"</button>');
-                 res.write('<button class="bt4" id="bt">"o"</button>');  
+                 res.write('<button class="bt1" id="bt">"Fogo"</button>');
+                 res.write('<button class="bt2" id="bt">"Água"</button>');
+                 res.write('<button class="bt3" id="bt">"Terra"</button>');
+                 res.write('<button class="bt4" id="bt">"Vento"</button>');  
              res.write('</div>');
             res.write('</div>');
            res.write('</div>');
@@ -69,13 +70,16 @@ app.get('/index', function(req, res) {
     res.render( __dirname + '/html/index.html');
 });
 
-app.get('/sobre', function(req, res) {
-    res.render( __dirname + '/html/sobre.html');
+app.get('/sobrenovo', function(req, res) {
+    res.render( __dirname + '/html/sobrenovo.html');
 });
 
 app.use('/css',express.static(__dirname + '/css'));
 
+app.use('/imagens',express.static(__dirname + '/imagens'));
+
 app.use(express.static('imagens'));
+
 
 
 var port = 3000;

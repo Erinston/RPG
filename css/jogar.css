@@ -19,8 +19,8 @@
 			text-align: center;
 			margin: 0 auto;
 			margin-top: 10px;
-			color: white;
-			font-size: 60px;
+			color: #00FFFF;
+			font-size: 70px;
 		}
 		
 		.telaJogo{
@@ -127,7 +127,7 @@
             text-decoration: none;
             margin-left: 15px;
             margin-top: -500px;
-            color: white;
+            color: #00FFFF;
             position: relative;
             top: -60px;
             

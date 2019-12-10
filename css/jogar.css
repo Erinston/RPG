@@ -9,7 +9,7 @@
 		body{
 			 background: url('../imagens/pokemon.jpg');
    			 background-repeat: no-repeat;
-    		 background-size: cover; 
+    		 background-size: cover;
              font-family: 'Amatic SC', cursive;
 
 			/*background-attachment: fixed;*/
@@ -22,12 +22,17 @@
 			color: #00FFFF;
 			font-size: 70px;
 		}
-		
+
 		.telaJogo{
 			margin: 0 auto;
 			border: 5px solid red;
-			width: 800px;
-			height: 552px;
+			width: 1000px;
+			height: 610px;
+			background:url("../imagens/tela.png");
+			background-repeat: no-repeat;
+    		background-size: 1006px;
+    		background-position: all;
+
 		}
 		.img{
 			width: 100%;
@@ -36,14 +41,16 @@
 			/*border: 1px solid black;*/
 			width: 300px;
 			height: 200px;
-			margin-top: -0.5%;
+			margin-top: 0.1%;
+			margin-left: -5%;
 			/*background-color: red;*/
 		}
 		.jogador2{
 			/*border: 1px solid black;*/
 			width: 300px;
 			height: 200px;
-			margin-left: 62.4%;
+			margin-left: 70.4%;
+			margin-top: 5%;
 		}
 		.areaJogador{
 			border: 1px solid red;
@@ -59,7 +66,7 @@
 		}
 		.botoes{
 			margin-left: 115%;
-			margin-top: -8%;
+			margin-top: -6%;
 			border: 4px solid black;
 			height: 100%;
 			width: 70%;
@@ -67,73 +74,91 @@
 		#hp{
 			border: 3px solid black;
 			height: 15%;
-			width: 40%;			
+			width: 40%;
+			font-size: 24px;
 		}
 		.hp1{
 			margin-top: -30px;
-			margin-left: 70px;
-			background:white;
+			margin-left: 180px;
+			background:red;
 			text-align: center;
-			
+
 			}
 		.hp2{
 			margin-top: -30px;
-			margin-left: 70px;
-			background:white;
+			margin-left: 80px;
+			background:red;
 			text-align: center;
 			}
-		
+
 		.textos{
 				text-align: center;
 				color: #00FFFF;
 				font-size: 20px;
 
-			
+
 			}
 		.fazeataque{
 
-		}	
+		}
 
 		#bt{
 			height: 30%;
-			width: 40%;			
+			width: 40%;
 		}
 		.bt1{
-			margin-top: 10px;
-			margin-left: 10px;
-			background: yellow;
+			margin-top: -100px;
+			margin-left: 6px;
+			background: red;
 			color: black;
+			border: 3px solid black;
 		}
 		.bt2{
 			color: black;
 			margin-top: 30px;
-			margin-left: 10px;
-			background: red;
+			margin-left: 8px;
+			background: blue;
+			border: 3px solid black;
 		}
 		.bt3{
-			color: white;
-			margin-top: 5px;
-			margin-left: 10px;
-			background: blue;
+			margin-top: -50px;
+			margin-left: 8px;
+			background: yellow;
+			color:black;
+			border: 3px solid black;
 			}
 		.bt4{
-			margin-top: 0%;
+			margin-top: 2%;
 			margin-left: 10px;
-			background: black;
-			color: white;
+			background: white;
+			color: black;
+			border: 3px solid black;
 		}
 		a {
-           
+
             color: rgb(45, 46, 46);
-            font-family: 'Amatic SC', cursive; 
+            font-family: 'Amatic SC', cursive;
             text-transform: uppercase;
             font-size: 60px;
             text-decoration: none;
-            margin-left: 15px;
-            margin-top: -500px;
+            margin-left: 50px;
+            margin-top: -1000px;
             color: #00FFFF;
             position: relative;
             top: -60px;
-            
-        }   
-		 
+
+        }
+        a #bt {
+
+            color: rgb(45, 46, 46);
+            font-family: 'Amatic SC', cursive;
+            text-transform: uppercase;
+            font-size: 60px;
+            text-decoration: none;
+            margin-left: 0px;
+            margin-top: -1000px;
+            color: #00FFFF;
+            position: relative;
+            top: -60px;
+
+        }

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+* {
+    margin: 0;
+    padding: 0;  
+    font-family: 'Amatic SC', cursive;
+}
+body{
+    background-color: white;
+    background-image:url('../imagens/sao.png');
+    background-size:cover; 
+    overflow: hidden;
+}
+/* container */
+.cabecalho{
+    color: #fff;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    height: auto;
+}
+h1{
+    font-size: 120px;
+} 
+h5{
+    font-size: 70px;
+}
+
+ul{
+    
+    text-align: center;
+    margin: 280px auto;
+    padding: 20px; 
+}
+ul li {
+    display: inline-block;
+    font-size: 60px;
+    width: 150px;
+    padding: 5px;
+    margin: 50px 50px 50px 50px;
+    border:5px solid white;
+    text-align: center;
+    border-radius: 100px;
+    color:white;
+    transition: 0.5s;
+}
+ul li:hover{
+    background-color: #00FFFF;
+    color:black;
+}
+

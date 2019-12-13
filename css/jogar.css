@@ -26,10 +26,10 @@
 		.telaJogo{
 			margin: 0 auto;
 			border: 5px solid black;
-			width: 800px;
+			width: 1000px;
 			background:url("../imagens/tela.png");
 			background-repeat: no-repeat;
-    		background-size: 790px;
+    		background-size: 1070px;
     		background-position: all;
 
 		}
@@ -40,14 +40,15 @@
 			/*border: 1px solid black;*/
 			width: 300px;
 			height: 180px;
-			margin-top: 01%;
+			margin-top: 6%;
+			margin-left: -45px;
 			/*background-color: red;*/
 		}
 		.jogador2{
 			/*border: 1px solid black;*/
 			width: 300px;
 			height: 200px;
-			margin-left: 52.4%;
+			margin-left: 72.4%;
 			margin-top: 5%;
 		}
 		.areaJogador{
@@ -58,87 +59,92 @@
 			margin-top: 0.1px;
 		}
 		.textos{
-			background: white;
+			
 			border: 4px solid black;
 			height: 100%;
 			width: 50%;
 		}
 		h3{	
 			margin: center
-			background:white:;
-			color: black;
+			color: white;
 			font-size: 35px;
 		}
 		.fimLuta{
+			
 			margin: auto;
 			text-align: center;
 			width: 100%;
 			height: 100%;
-			background-color: white; 
+
+			
 		}
 		.bt{
-			background: red;
-			margin-left: 387px; 
-			margin-top: -19%;
-			border: 3px solid black;
+			
+			margin-left: 540px; 
+			margin-top: -15%;
+			border: 6px solid black;
 			height: 100%;
-			width: 52%;
-						text-align: center;
+			width: 40%;
+			
 
-		} #bt{
+		} 
+		#bt{
+			
 			margin-bottom: 100%;
-			margin-left: 3px; 
+			margin-left: 90px; 
 			border: 5px solid black;
 
 
 			}
-		.bt1{
-			
-			background: yellow;
-			color: black;
-		}
-		.bt2{
-			color: black;
-			margin-top: 100px;
-			margin-left: 0px;
+		a#bt.bt1{
+			margin-left: 60px;
+			margin-top: 0%;
 			background: red;
+			color: black;
 		}
-		.bt3{
-			color: white;
-			margin-top: 0px;
-			margin-left: 0px;
+		a#bt.bt2{
+			color: black;
+			margin-top: 0%;
+			margin-left: 105px;
 			background: blue;
+		}
+		a#bt.bt3{
+			color: black;
+			margin-top: 0%;
+			margin-left: 60px;
+			background: orange;
 			}
-		.bt4{
+		a#bt.bt4{
 			margin-top: 0%;
 			margin-left: 100px;
-			background: black;
-			color: white;
+			background: white;
+			color: black;
+			
 		}
 		#hp{
-			border: 3px solid ;
-			
+			border: 3px solid black;
 			width: 50%;
 			font-size: 29px;			
 		}
 		.hp1{
 			margin-top: -90px;
 			margin-left: 200px;
-			background:orange;
-
+			background:red;
 			text-align: center;
-			
+			color:white;
 			}
 		.hp2{
 			margin-top: -30px;
 			margin-left: 0px;
-			background:yellow;
+			background:red;
 			text-align: center;
+			color:white;
 			}
 		
 		.textos{
+				
 				text-align: center;
-				color: #00FFFF;
+				color: black;
 				font-size: 20px;
 
 			
@@ -146,15 +152,16 @@
 		.derota{
 			margin: 0 auto;
 			color: black;
-			background: white;
+			color: black;
 			text-align: center;
-			margin-left: 25%;
-			margin-right: 32%;
+			margin-left: 15%;
+			margin-right: 30%;
 			position: absolute;
+			font-size: 80px;
 
 		}	
 		.vence{
-			width: 10000%;
+			width: 1000%;
 		}
 		 
 		a.volta {
@@ -175,9 +182,9 @@
         a#bt {
            
             text-transform: uppercase;
-            font-size: 40px;
+            font-size: 43px;
             text-decoration: none;
-             top:32px;
+            top:32px;
       
         } 
-        
+       

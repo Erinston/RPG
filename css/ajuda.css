@@ -4,17 +4,17 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family:'Amatic SC', cursive;;
+      font-family:'Amatic SC', cursive;
 }
 li {
     text-decoration: none;
     font-size: 40px;
     margin-left: 20px;
-    color:#FFE4C4;
+    color:  #00FFFF;
     padding: 70px 70px;     
 }
 body {
-    background: url('../imagens/sao.png');
+    background: url('../imagens/pokemon.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
     font-family: 'Amatic SC', cursive;
@@ -22,7 +22,7 @@ body {
 }
 a {
             font-size: 60px;
-            color: rgb(255,255,255);
+            color: #00FFFF;
             text-transform: uppercase;
             margin-left: 10px; 
             text-decoration: none;

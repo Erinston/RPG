@@ -2,12 +2,15 @@
 		*{
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
+			font-family:'Amatic SC', cursive;
+
 		}
 		body{
-			background-image: url('/sao.png');
-			background-repeat: no-repeat;
-			background-size: cover;
-			
+			 background: url('../imagens/pokemon.jpg');
+   			 background-repeat: no-repeat;
+    		 background-size: cover; 
+             font-family: 'Amatic SC', cursive;
 
 			/*background-attachment: fixed;*/
 			/*cursor:crosshair;*/
@@ -16,23 +19,19 @@
 			text-align: center;
 			margin: 0 auto;
 			margin-top: 10px;
-			color: white;
+			color: #00FFFF;
+			font-size: 70px;
 		}
-		.voltar{
-			text-decoration: none;
-			margin-left: 10px;
-			border: 2px solid black;
-			background-color: black;
-			border-radius: 1px;
-			width: 140px;
-			color: white;
-		}
+		
 		.telaJogo{
 			margin: 0 auto;
-			border: 1px solid red;
+			border: 5px solid black;
 			width: 800px;
-			height: 552px;
-			background: white;
+			background:url("../imagens/tela.png");
+			background-repeat: no-repeat;
+    		background-size: 790px;
+    		background-position: all;
+
 		}
 		.img{
 			width: 100%;
@@ -40,85 +39,145 @@
 		.jogador1{
 			/*border: 1px solid black;*/
 			width: 300px;
-			height: 200px;
-			margin-top: -.4%;
+			height: 180px;
+			margin-top: 01%;
 			/*background-color: red;*/
 		}
 		.jogador2{
 			/*border: 1px solid black;*/
 			width: 300px;
 			height: 200px;
-			margin-left: 62.4%;
+			margin-left: 52.4%;
+			margin-top: 5%;
 		}
 		.areaJogador{
 			border: 1px solid black;
 			width: 100%;
 			height: 150px;
-			margin-top: 0px;
+			/*background: yellow;*/
+			margin-top: 0.1px;
 		}
 		.textos{
-			border: 1px solid black;
+			background: white;
+			border: 4px solid black;
 			height: 100%;
 			width: 50%;
 		}
-		.botoes{ 
-			margin-left: 130%;
-			margin-top: 1%;
-			border: 1px solid black;
+		h3{	
+			margin: center
+			background:white:;
+			color: black;
+			font-size: 35px;
+		}
+		.fimLuta{
+			margin: auto;
+			text-align: center;
+			width: 100%;
 			height: 100%;
-			width: 50%;
+			background-color: white; 
 		}
-		#hp{
-			border: 1px solid black;
-			height: 15%;
-			width: 40%;			
-		}
-		.hp1{
-			margin-top: -150px;
-			margin-left: 20px;
-			background:white;
-			}
-		.hp2{
-			margin-top: 15px;
-			margin-left: 10px;
+		.bt{
 			background: red;
+			margin-left: 387px; 
+			margin-top: -19%;
+			border: 3px solid black;
+			height: 100%;
+			width: 52%;
+						text-align: center;
+
+		} #bt{
+			margin-bottom: 100%;
+			margin-left: 3px; 
+			border: 5px solid black;
+
+
 			}
-		
-		.textos{
-				text-align: center;
-				color: black;
-
-			
-			}
-		.fazeataque{
-
-		}	
-
-		#bt{
-			height: 30%;
-			width: 40%;			
-		}
 		.bt1{
-			margin-top: 10px;
-			margin-left: 10px;
+			
 			background: yellow;
 			color: black;
 		}
 		.bt2{
 			color: black;
-			margin-top: 30px;
-			margin-left: 10px;
+			margin-top: 100px;
+			margin-left: 0px;
 			background: red;
 		}
 		.bt3{
 			color: white;
-			margin-top: 5px;
-			margin-left: 10px;
+			margin-top: 0px;
+			margin-left: 0px;
 			background: blue;
 			}
 		.bt4{
 			margin-top: 0%;
-			margin-left: 10px;
+			margin-left: 100px;
 			background: black;
 			color: white;
 		}
+		#hp{
+			border: 3px solid ;
+			
+			width: 50%;
+			font-size: 29px;			
+		}
+		.hp1{
+			margin-top: -90px;
+			margin-left: 200px;
+			background:orange;
+
+			text-align: center;
+			
+			}
+		.hp2{
+			margin-top: -30px;
+			margin-left: 0px;
+			background:yellow;
+			text-align: center;
+			}
+		
+		.textos{
+				text-align: center;
+				color: #00FFFF;
+				font-size: 20px;
+
+			
+			}
+		.derota{
+			margin: 0 auto;
+			color: black;
+			background: white;
+			text-align: center;
+			margin-left: 25%;
+			margin-right: 32%;
+			position: absolute;
+
+		}	
+		.vence{
+			width: 10000%;
+		}
+		 
+		a.volta {
+           
+            color: rgb(45, 46, 46);
+            font-family: 'Amatic SC', cursive; 
+            text-transform: uppercase;
+            font-size: 60px;
+            text-decoration: none;
+            margin-left: 50px;
+            margin-top: -100px;
+            color: #00FFFF;
+            position: relative;
+            top: -60px;
+            width: 100px;
+            
+        } 
+        a#bt {
+           
+            text-transform: uppercase;
+            font-size: 40px;
+            text-decoration: none;
+             top:32px;
+      
+        } 
+        

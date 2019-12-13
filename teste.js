@@ -112,8 +112,8 @@ if (vida1 <= 0 || vida2 <= 0) {
                  // vida1=100; 
                  // vida2=100;; 
                   res.write('<div class="fimLuta">');
-                    res.write('<a href="/reiniciar" class="b3" id="bt"> reiniciar<a/>');
-                    res.write('<a href="/" class="bt2" id="bt">Sair<a/>');
+                    res.write('<a href="/reiniciar" class="b5" id="bt"> Reiniciar</a>');
+                    res.write('<a href="/" class="bt6" id="bt"> Sair</a>');
                   res.write('</div>');
                 }
 
